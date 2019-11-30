@@ -1,6 +1,8 @@
 # P-Vs-NP--Student-Roomate-List-Generator
 Proposed Solution to the Student Dorm Matching Problem at https://www.claymath.org/millennium-problems/p-vs-np-problem
 
+demo: http://nwukor.com/deansproblem.php
+
 Problem Overview:
 "Suppose that you are organizing housing accommodations for a group of four hundred university students. 
 Space is limited and only one hundred of the students will receive places in the dormitory. 
