@@ -10,10 +10,12 @@
     include 'Combinatorics.php';
     
 	/* Variable List */
-    $r = 2;    // R = # of roomates to a room/pairing
-    $k = 400;  // N = # of students total
-    $q = 100;   // K = # of choosen few
-    $b = 30000; // B = # of banned pairings
+    $r = 2;    	// R = # of roomates to a room/pairing
+    $k = 400;	// K = # of students applicants
+	$a = 100; 	// A = # of choosen applicants
+    $b = 60000; 	// B = # of banned pairings
+	
+    $q = $a/$r; // K = # of required pairings
     $q_list = array(); // The List of approved students.
 
 	// Try SQL connection
@@ -48,7 +50,7 @@
 	
     echo '
     <h1>Student Booking Problem</h1>
-    <p>Student List ('.$k.' Applicants | '.$r.' Students Per Room | '.$q.' Applicants Can Be Chosen | '.$b.' Dean\'s Banned Pairings List)</p>
+    <p>Student List ('.$k.' Applicants | '.$r.' Students Per Room | '.$a.' Applicants Can Be Chosen  | '.$q.' Acceptable Pairings | '.$b.' Dean\'s Banned Pairings List)</p>
     
     <h3>Applicant List: '.$k.' Students:</h3>
     <textarea style="width:40%;height:400px;">';
@@ -90,12 +92,12 @@
 	When this happens, regardless what the number of # students, #needed pairs, or # of banned pairs, is if you end up in this ratio, the program will run out of memory (on certain machines.
 	This generally leaves a minor percentage of possible matches remaining undiscovered.
 	
-	To test this in more detail, reduce k (number of students), $q (number of pairs needed) and $b (banned list pairing limit), you can also try to increase your memory limit (line 4)
+	To test this in more detail, reduce k (number of students), $a (number of students needed) and $b (banned list pairing limit), you can also try to increase your memory limit (line 4)
 	
-    $r = 2;    // R = # of roomates to a room/pairing
-    $k = 25;  // N = # of students total
-    $q = 8;   // K = # of choosen few
-    $b = 290; // B = # of banned pairings
+    $r = 2;    	// R = # of roomates to a room/pairing
+    $k = 25;	// K = # of students applicants
+	$a = 8; 	// A = # of choosen applicants
+    $b = 289; 	// B = # of banned pairings
 	
 	You should see that in most cases, it can sometimes get every combination thats possible, or run out of memory.
 	
