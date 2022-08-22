@@ -1,4 +1,4 @@
-# P-Vs-NP--Student-Roomate-List-Generator
+# Clay Math--Student-Roomate-List-Generator
 Proposed Solution to the Student Dorm Matching Problem at https://www.claymath.org/millennium-problems/p-vs-np-problem
 
 demo: http://nwukor.com/deansproblem.php
