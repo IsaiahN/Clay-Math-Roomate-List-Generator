@@ -1,13 +1,12 @@
 <?php
 	/* Author: Isaiah Nwukor 
 	*  Created: 11/22/19-11/30/19
-	*  Updated: 08/21/22
+	*  Updated: 07/26/22
 	*  Description: Student Pairing List Generator V2. Uses inputs, and has a text file for default generation method.
 	*/
     ini_set('display_errors', 1); 
     ini_set('display_startup_errors', 1); 
     ini_set('memory_limit', '512M');
-    ini_set('max_input_vars', '2500');
     error_reporting(E_ALL);
     include 'Combinatorics.php';
     ?>
@@ -500,7 +499,7 @@
                 <div class="header">
                     <h3>Roommate Matching Demo</h3>
                     <p>Solution to the Roommate Matching Puzzle from <a href="https://www.claymath.org/millennium-problems/p-vs-np-problem" title="Clay Math Institute">Clay Math Institute</a>
-                    <br/>Source Code Available Via: <a href="https://github.com/IsaiahN/P-Vs-NP--Student-Roommate-List-Generator" title="Github @IsaiahN">Github</a></p>
+                    <br/>Source Code Available Via: <a href="https://github.com/IsaiahN/Clay-Math-Roomate-List-Generator" title="Github @IsaiahN">Github</a></p>
                     <hr>
                 </div>
                 <div class="row">
